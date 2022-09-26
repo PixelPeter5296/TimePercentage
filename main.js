@@ -1,6 +1,6 @@
 function main() {
     let time = prompt("Wann hast du Schluss? (hh:mm)")
-    if (time.match(/^(\d){2}:(\d){2}$/)) return
+    if (!time.match(/^(\d){2}:(\d){2}$/)) return
     let hours = parseInt(time.split(":")[0])
     let minutes = parseInt(time.split(":")[1])
     setInterval(() => { document.body.innerHTML = "<h1 style='font-family:Helvetica'>" + parseFloat(
