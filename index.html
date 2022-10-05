@@ -79,12 +79,10 @@ button, input[type="text"], input[type="submit"] {
 <div class="view" id="start" style="opacity:1;display:flex;">
 
   <div class="block">
-    <p>Start:&nbsp;&nbsp;&nbsp;</p>
-    <input type="text" placeholder="hh:mm" id="startinput" pattern="^(\d)+:(\d)+$"></input></div>
+    <input type="text" placeholder="From (hh:mm)" id="startinput" pattern="^(\d)+:(\d)+$"></input></div>
 <br>
 <div class="block">
-  <p>End:&nbsp;&nbsp;&nbsp;</p>
-<input type="text" placeholder="hh:mm" id="endinput" format="^(\d)+:(\d)+$"></input>
+<input type="text" placeholder="To (hh:mm)" id="endinput" format="^(\d)+:(\d)+$"></input>
 </div><br>
   <button onclick="toggleView();loadTime()">Go <i class="fa-solid fa-arrow-right"></i></button>
 </div>
