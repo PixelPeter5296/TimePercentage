@@ -1,0 +1,110 @@
+body {
+    font-family: Helvetica;
+    background: #101012;
+    color: #fefefe;
+}
+
+.container {
+    background: #1c1c1e;
+    border-radius: 10px;
+    position: absolute;
+    left: 20px;
+    color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid #232325
+}
+
+.container:not(.heading) {
+    font-size: 60px;
+}
+
+.heading {
+    top: 20px;
+    width: calc(100% - 40px);
+    height: calc(20% - 30px);
+}
+
+.percentage {
+    top: calc(20% + 10px);
+    left: 20px;
+    height: calc(80% - 30px);
+    width: calc(50% - 30px);
+    font-weight: bold;
+}
+
+.time {
+    top: calc(20% + 10px);
+    left: calc(50% + 10px);
+    width: calc(50% - 30px);
+    height: calc(80% - 30px);
+    font-weight: bold;
+}
+
+button,
+input[type="text"],
+input[type="submit"] {
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background: #28282A;
+    border: 1px solid #2F2F31;
+    color: #fefefe;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 5px;
+    font-size: 15px;
+}
+
+input[type="text"] {
+    width: 120px
+}
+
+button:hover {
+    background: #1C1C1E;
+}
+
+.editbutton {
+    font-size: 16px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.view {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #101012;
+    text-align: center;
+    transition: 0.3s linear;
+}
+
+p {
+    border-radius: 10px;
+    padding: 10px;
+    background: #222226;
+}
+
+.pointable {
+    cursor: pointer;
+}
+
+#start {
+    z-index: 4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    backdrop-filter: blur(60px) saturate(210%);
+    -webkit-backdrop-filter: blur(60px) saturate(210%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
